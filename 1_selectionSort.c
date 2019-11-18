@@ -1,9 +1,8 @@
 #include <stdio.h>
 int main(void){
 	int i, j, index, min, temp;
-	int array[10] = {1, 10, 5, 8 ,7, 6 , 4, 3, 2, 9 };
+	int array[10] = {2, 4, 3, 8, 6, 1, 9, 7, 10, 5 };
 	int len = sizeof(array)/sizeof(int);
-
 	for(i=0; i<len; i++){
 		min=9999;
 		for(j =i; j<len; j++){
