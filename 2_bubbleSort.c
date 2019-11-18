@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "swap.c"
 
 int main(void){
 	int i, j, temp;
@@ -8,9 +9,7 @@ int main(void){
 	for(i=0; i<len; i++){
 		for(j=0; j<len-i; j++){
 			if(array[j]>array[j+1]){
-				temp = array[j];
-				array[j] = array[j+1];
-				array[j+1] = temp;
+				swap(&array[j], &array[j+1]);
 			}
 		}
 	}
